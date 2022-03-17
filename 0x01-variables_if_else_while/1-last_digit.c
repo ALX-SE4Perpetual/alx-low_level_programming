@@ -1,13 +1,12 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-
-/** main - main block
+/**
+ * main - main block
  * Description: Assign a random number to variable
  * and print an output based on the last digit of the value of n
  * Return: 0
- **/
-
+ */
 int main(void)
 {
 	int n;
