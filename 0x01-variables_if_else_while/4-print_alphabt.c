@@ -1,27 +1,20 @@
 #include <stdio.h>
-#include <stdlib.h>
 
 /**
  * main - main block
- * Description: Get a to z
- * and then A to Z
+ * Description: print alphabet in lowercase exceptq and e
  * Return: 0
- */
+ **/
 int main(void)
 {
 	char c = 'a';
 
 	while (c <= 'z')
 	{
-		putchar(c);
-		c++;
-	}
-
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
+		if (c != 'q' && c != 'e')
+		{
+			putchar(c);
+		}
 		c++;
 	}
 

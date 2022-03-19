@@ -1,28 +1,20 @@
 #include <stdio.h>
+#include <time.h>
 #include <stdlib.h>
-
 /**
  * main - main block
- * Description: Get a to z
- * and then A to Z
+ * Description: print alpha in reverse
+ * starting from 0, followed by a new line.
  * Return: 0
  */
 int main(void)
 {
-	char c = 'a';
+	char c = 'z';
 
-	while (c <= 'z')
+	while (c >= 'a')
 	{
 		putchar(c);
-		c++;
-	}
-
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
-		c++;
+		c--;
 	}
 
 	putchar('\n');
