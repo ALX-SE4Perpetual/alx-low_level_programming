@@ -1,19 +1,22 @@
-#include "_putchar.c"
-#include "main.c"
-
+#include "main.h"
+#include <stdio.h>
 /**
- * print_alphabet_x10 - prints alphabet
- * description: prints alphabet x10
- * Return: 0
+ * print_alphabet_x10 - prints alphabets 10x
+ *
+ * Return: void
  */
 void print_alphabet_x10(void)
 {
-	for (int i = 0; i < 9; i++)
-	{
-		for (int j = 'a'; j <= 'z'; j++)
-		{
-			_putchar(j);
-		}
-		_putchar('\n');
-	}
+char alpha;
+int times;
+
+for (times = 0; times <= 9; times++)
+{
+for (alpha = 'a'; alpha <='z'; alpha++)
+for (alpha = 'a'; alpha <= 'z'; alpha++)
+{
+putchar(alpha);
+}
+putchar('\n');
+}
 }
