@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include "main.h"
+
 /**
  * main - main block
  * description: prints _putchar
  * Return: 0
  */
+
 int main(void)
 {
 	char word[8] = "_putchar";
