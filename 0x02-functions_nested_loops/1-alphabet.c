@@ -2,19 +2,22 @@
 #include <stdio.h>
 
 /**
- * print_alphabet - prints alphabet
- * description: prints alphabet
- * Return: 0
+ * print_alphabet_x10 - prints alphabets 10x
+ *
+ * Return: void
  */
-
-void print_alphabet(void)
+void print_alphabet_x10(void)
 {
-	int i = 'a';
+	char alpha;
+	int times;
 
-	while (i <= 'z')
+	for (times = 0; times <= 9; times++)
 	{
-		putchar(i);
-		i++;
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+	{
+		putchar(alpha);
 	}
-	putchar('\n');
+		putchar('\n');
+	}
 }
+
