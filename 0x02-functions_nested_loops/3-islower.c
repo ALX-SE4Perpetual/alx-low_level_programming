@@ -2,9 +2,7 @@
 
 /**
  * _islower - checks for lowercase
- *
  * @c: an ASCII character
- *
  * Return: 1 if lowercase and 0 if upper
  */
 
