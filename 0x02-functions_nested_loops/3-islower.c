@@ -1,21 +1,22 @@
 #include "3-islower.c"
-#include "_putchar.c"
+#include "main.h"
 
 /**
- * main - check the code.
+ * _islower - checks for lowercase
  *
- * Return: Always 0.
+ * @c: an ASCII character
+ *
+ * Return: 1 if lowercase and 0 if upper
  */
-int main(void)
-{
-	int r;
 
-	r = _islower('H');
-	_putchar(r + '0');
-	r = _islower('o');
-	_putchar(r + '0');
-	r = _islower(108);
-	_putchar(r + '0');
-	_putchar('\n');
+int _islower(int c)
+{
+	if (c >= 'a' && c <= 'z')
+	{
+	return (1);
+	}
+	else
+	{
 	return (0);
+	}
 }
