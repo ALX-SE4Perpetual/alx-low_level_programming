@@ -1,3 +1,4 @@
+#include "main.h"
 #include <time.h>
 #include <stdio.h>
 #include <stdlib.h>
@@ -9,28 +10,13 @@
  * Description: Program that generates random valid passwords
  * Return: 0 if works
  */
+
 int main(void)
 {
-int i, sum, n;
-int pass[100];
+int num;
 
-sum = 0;
-
-srand(time(NULL))
-
-for (i = 0; i < 100; i++)
-{
-pass[i] = rand() % 78;
-sum += (pass[i] + '0');
-putchar(pass[i] + '0');
-if ((2772 - sum) - '0' < 78)
-{
-n = 2772 - sum - '0';
-sum += n;
-putchar(n + '0');
-break;
-}
-}
-
+srand(time(0));
+num = rand();
+printf("%i\n", num);
 return (0);
 }
