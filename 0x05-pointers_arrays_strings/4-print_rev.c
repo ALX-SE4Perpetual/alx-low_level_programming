@@ -15,11 +15,10 @@ while (s[count] != '\0')
 {
 count++;
 }
-count--;
 
-while (count >= 0)
+for (count = count - 1 ; count >= 0; count--)
 {
-_putchar(s[count]);
+_putchar (s[count]);
 }
 
 putchar('\n');
