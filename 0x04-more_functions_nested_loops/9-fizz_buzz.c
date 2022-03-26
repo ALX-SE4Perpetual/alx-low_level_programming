@@ -8,7 +8,6 @@
 
 int main(void)
 {
-
 int i = 1;
 
 while (i <= 100)
@@ -27,5 +26,5 @@ i++;
 }
 printf("\n");
 
-feturn (0);
+return (0);
 }
