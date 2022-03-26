@@ -11,14 +11,13 @@ void print_rev(char *s)
 {
 int count = 0;
 
-while (s[count])
+while (s[count] != '\0')
 {
 count++;
 }
-
 count--;
 
-for (; count >= 0; count--)
+while (count >= 0)
 {
 _putchar(s[count]);
 }
