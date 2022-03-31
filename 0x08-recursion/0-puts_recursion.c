@@ -1,9 +1,8 @@
 #include "main.h"
-
 /**
- * _puts_recursion - prints a string, followed by a new linevoid _puts_recursion(char *s)
- * @s: string
- * Return: void
+ *_puts_recursion - prints a string
+ *@s: pointer block of memory to fill
+ *Return: void
  */
 
 void _puts_recursion(char *s)
