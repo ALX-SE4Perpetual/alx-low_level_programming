@@ -1,40 +1,34 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * _atoi - xonvert to integer
- * @s: poiter to string
- * Return: integer
+ * _atoi - converts a string to an integer.
+ * @s: input string.
+ * Return: integer.
  */
 int _atoi(char *s)
 {
-unsigned int i = 0, z = 0, p = 0;
-unsigned int h = 1, w = 1, n;
+	unsigned int count = 0, size = 0, oi = 0, pn = 1, m = 1, i;
 
-while (s[i])
-{
-if (z > 0 && (s[i] < '0' || s[i] > '9'))
-{
-break;
-}
-if (s[i] == '-')
-{
-h *= -1;
-}
-if ((s[i] >= '0') && (s[i] <= '9'))
-{
-if (z > 0)
-{
-w *= 10;
-}
-z++;
-}
-i++;
-}
-for (n = i - z; n < i; n++)
-{
-p = p + ((s[n] - 48) * w);
-w /= 10;
-}
-return (p * h);
+	while (*(s + count) != '\0')
+	{
+		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
+			break;
+		if (*(s + count) == '-')
+			pn *= -1;
+
+		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+		{
+			if (size > 0)
+				m *= 10;
+			size++;
+		}
+		count++;
+	}
+
+	for (i = count - size; i < count; i++)
+	{
+		oi = oi + ((*(s + i) - 48) * m);
+		m /= 10;
+	}
+	return (oi * pn);
 }
